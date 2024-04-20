@@ -1,4 +1,3 @@
-// ItemListContainer.jsx
 import PropTypes from 'prop-types';
 
 const ItemListContainer = ({ category }) => {

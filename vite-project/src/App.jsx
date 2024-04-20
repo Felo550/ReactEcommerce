@@ -1,6 +1,6 @@
 import { useState } from 'react'; // Solo importamos useState, ya que es lo único que usamos
 
-import { NavBar } from './components/NavBar/NavBar';
+import  NavBar from './components/NavBar/NavBar';
 import CartWidget from './components/CartWidget/CartWidget';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
