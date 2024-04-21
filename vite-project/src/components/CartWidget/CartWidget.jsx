@@ -1,18 +1,13 @@
-import PropTypes from 'prop-types';
+import { Badge } from 'react-bootstrap';
+import cart from '../../assets/carritocompras.png';
 
-const CartWidget = ({ itemCount }) => {
+const CarWidget = () => {
   return (
     <div>
-      <img src="/icono-carrito.png" alt="Carrito de compras" />
-      <span className="badge badge-primary">{itemCount}</span>
-      <a href="/carrito">Ver carrito</a>
+      <img src={cart} alt="cart-widget" />
+      <Badge bg="secondary">0</Badge>
     </div>
   );
 };
 
-// Definición de PropTypes
-CartWidget.propTypes = {
-  itemCount: PropTypes.number.isRequired // Asegura que itemCount sea un número y que sea requerido
-};
-
-export default CartWidget;
+export default CarWidget;

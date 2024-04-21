@@ -1,16 +1,23 @@
-import { Link } from 'react-router-dom'; // Importar Link para crear enlaces
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import CarWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
   return (
-    <nav>
-      <h3>ECommerce</h3>
-      <div>
-        {/* Enlaces a diferentes páginas */}
-        <Link to="/cursos/canto">Curso Canto</Link>
-        <Link to="/cursos/bajo">Curso Bajo</Link>
-        <Link to="/cursos/bateria">Curso Batería</Link>
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">Corchea Academy</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#bajo">Curso Bajo</Nav.Link>
+            <Nav.Link href="#bateria">Curso Batería</Nav.Link>
+            <Nav.Link href="#piano">Curso Piano</Nav.Link>
+            <Nav.Link href="#voz">Curso Voz</Nav.Link>
+          </Nav>
+          <CarWidget />
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
