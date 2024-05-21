@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getProductById } from "../../utils/db";
+import { getProductById } from "../../utils/db.js";
 import { Spinner } from "../../components/spinner/spinner";
 import { ItemDetail } from "../../components/ItemDetail/ItemDetail";
 

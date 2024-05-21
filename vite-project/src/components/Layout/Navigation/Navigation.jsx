@@ -18,10 +18,9 @@ export const Navigation = () => {
           <Nav className="me-auto">
             <Link to="/" className="nav-link">Inicio</Link>
             <Link to="/courses" className="nav-link">Cursos</Link>
-            <Link to="/category/bass" className="nav-link">Curso Bajo</Link>
-            <Link to="/category/drums" className="nav-link">Curso Batería</Link>
-            <Link to="/category/piano" className="nav-link">Curso Piano</Link>
-            <Link to="/category/vocals" className="nav-link">Curso Voz</Link>
+            <Link to="/category/cuerdas" className="nav-link">Cuerdas</Link>
+            <Link to="/category/percusion" className="nav-link">Percusion</Link>
+            <Link to="/category/humana" className="nav-link">Voz</Link>
             <Link to="/about" className="nav-link">Sobre Nosotros</Link>
           </Nav>
           <Nav>

@@ -34,7 +34,7 @@ export const products = [
       stock: 100,  // Stock máximo permitido
       category: ["humana"],
       image: 'https://cdn.pixabay.com/photo/2015/05/13/09/13/singer-764590_1280.jpg',  // Imagen de una persona cantando
-    }
+    },
   ];
   
 
