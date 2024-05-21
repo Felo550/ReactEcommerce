@@ -6,7 +6,7 @@ export const products = [
       price: 150,
       stock: 100,  // Stock máximo permitido
       category: ["cuerdas"],
-      image: 'https://cdn.pixabay.com/photo/2015/07/17/14/44/electric-guitar-849928_1280.jpg',  // Imagen de un bajo
+      image: 'https://res.cloudinary.com/dz5bk4fbm/image/upload/v1716329767/bajo_a3vi3w.png',  // Imagen de un bajo
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ export const products = [
       price: 200,
       stock: 100,  // Stock máximo permitido
       category: ["percusion"],
-      image: 'https://cdn.pixabay.com/photo/2015/02/07/20/58/drum-set-627924_1280.jpg',  // Imagen de una batería
+      image: 'https://res.cloudinary.com/dz5bk4fbm/image/upload/v1716329767/bateria_wneax9.png',  // Imagen de una batería
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ export const products = [
       price: 180,
       stock: 100,  // Stock máximo permitido
       category: ["cuerdas"],
-      image: 'https://cdn.pixabay.com/photo/2015/09/05/21/51/piano-925831_1280.jpg',  // Imagen de un piano
+      image: 'https://res.cloudinary.com/dz5bk4fbm/image/upload/v1716329767/piano_jm4csi.png',  // Imagen de un piano
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ export const products = [
       price: 130,
       stock: 100,  // Stock máximo permitido
       category: ["humana"],
-      image: 'https://cdn.pixabay.com/photo/2015/05/13/09/13/singer-764590_1280.jpg',  // Imagen de una persona cantando
+      image: 'https://res.cloudinary.com/dz5bk4fbm/image/upload/v1716329767/canto_r7wzhl.png',  // Imagen de una persona cantando
     },
   ];
   
