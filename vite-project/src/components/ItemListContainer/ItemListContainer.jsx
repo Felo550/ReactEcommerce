@@ -1,16 +1,47 @@
-import { Container } from 'react-bootstrap';
-import NavBar from '../../components/NavBar/NavBar';
-import ItemListContainer from '../../components/ItemListContainer/ItemListContainer';
+/* eslint-disable react/prop-types */
+import { useState, useEffect } from "react";
+import { getProducts, getProductsByCategory } from "../../utils/db";
+import { ItemList } from "../../components/ItemList/ItemList";
+import { Spinner } from "../../components/spinner/spinner";
+import { useParams } from "react-router-dom";
 
-function App() {
+export const ItemListContainer = (greeting) => {
+  const defaultTitle = "default Title";
+
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const { catId } = useParams();
+
+  useEffect(() => {
+    setLoading(true);
+    if (catId) {
+      getProductsByCategory(catId).then((res) => {
+        setProducts(res);
+        setLoading(false);
+      });
+    } else {
+      getProducts()
+        .then((res) => {
+          setProducts(res);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }, [catId]);
+
   return (
-    <div className="App">
-      <NavBar />
-      <Container>
-        <ItemListContainer message={'Bienvenidos'} />
-      </Container>
-    </div>
+    <main className="container">
+      <h1 className="text-center"> {greeting ? greeting : defaultTitle} </h1>
+      {loading === true ? (
+        <Spinner />
+      ) : (
+      <div>
+        <ItemList productsList={products} />
+      </div>
+      )}
+    </main>
   );
-}
-
-export default App;
+};
