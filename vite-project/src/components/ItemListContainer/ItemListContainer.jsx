@@ -6,7 +6,7 @@ import { Spinner } from "../../components/spinner/spinner";
 import { useParams } from "react-router-dom";
 
 export const ItemListContainer = ({greeting}) => {
-  const defaultTitle = "default Title";
+  const defaultTitle = "";
 
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
