@@ -5,6 +5,7 @@ export const products = [
       description: 'Curso completo de bajo para principiantes y avanzados.',
       price: 150,
       stock: 100,  // Stock máximo permitido
+      category: ["cuerdas"],
       image: 'https://cdn.pixabay.com/photo/2015/07/17/14/44/electric-guitar-849928_1280.jpg',  // Imagen de un bajo
     },
     {
@@ -13,6 +14,7 @@ export const products = [
       description: 'Aprende a tocar la batería desde cero con este curso.',
       price: 200,
       stock: 100,  // Stock máximo permitido
+      category: ["percusion"],
       image: 'https://cdn.pixabay.com/photo/2015/02/07/20/58/drum-set-627924_1280.jpg',  // Imagen de una batería
     },
     {
@@ -21,6 +23,7 @@ export const products = [
       description: 'Curso de piano para todos los niveles, con lecciones prácticas.',
       price: 180,
       stock: 100,  // Stock máximo permitido
+      category: ["cuerdas"],
       image: 'https://cdn.pixabay.com/photo/2015/09/05/21/51/piano-925831_1280.jpg',  // Imagen de un piano
     },
     {
@@ -29,6 +32,7 @@ export const products = [
       description: 'Mejora tu técnica vocal con este curso especializado.',
       price: 130,
       stock: 100,  // Stock máximo permitido
+      category: ["humana"],
       image: 'https://cdn.pixabay.com/photo/2015/05/13/09/13/singer-764590_1280.jpg',  // Imagen de una persona cantando
     }
   ];

@@ -5,7 +5,7 @@ import { ItemList } from "../../components/ItemList/ItemList";
 import { Spinner } from "../../components/spinner/spinner";
 import { useParams } from "react-router-dom";
 
-export const ItemListContainer = (greeting) => {
+export const ItemListContainer = ({greeting}) => {
   const defaultTitle = "default Title";
 
   const [products, setProducts] = useState([]);

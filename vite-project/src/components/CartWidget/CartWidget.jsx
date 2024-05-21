@@ -1,7 +1,7 @@
 import { Badge } from 'react-bootstrap';
 import cart from '../../assets/carritocompras.png';
 
-const CarWidget = () => {
+export const CartWidget = () => {
   return (
     <div>
       <img src={cart} alt="cart-widget" />
@@ -9,5 +9,3 @@ const CarWidget = () => {
     </div>
   );
 };
-
-export default CarWidget;
