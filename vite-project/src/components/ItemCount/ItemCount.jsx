@@ -36,11 +36,11 @@ export const ItemCount = ({ stock, initial, handlleAddToCart }) => {
         <button onClick={handlleSubs}> - </button>
       </div>
 
-      {/* {pordAgregado ? (
+      {pordAgregado ? (
         <button onClick={handleTerminarCompra}> Terminar Compra </button>
       ) : (
         <button onClick={handleAgregarAlCarrito}>Agregar al carrito</button>
-      )} */}
+      )}
     </>
   );
 };
