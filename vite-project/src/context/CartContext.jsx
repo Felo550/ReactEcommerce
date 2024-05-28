@@ -17,7 +17,6 @@ const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  // esto del use effect y local storage NO ENTRA EN EL FINAL, ES OPTATIVO
   useEffect(() => {
     const cart = JSON.parse(localStorage.getItem("cart"));
     if (cart) {
@@ -26,7 +25,6 @@ const CartContextProvider = ({ children }) => {
       setTotalPrice(cart.reduce((acc, elem) => acc + elem.price * elem.qty, 0));
     }
   }, []);
-  // ************************************************************
 
   const addToCart = (item, qty) => {
     console.log(item);

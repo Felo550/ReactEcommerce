@@ -49,10 +49,10 @@ export const Cart = () => {
         <thead>
           <tr>
             <th>#</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Qty</th>
-            <th>Actions</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
