@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 export const products = [
     {
-      id: 1,
+      // id: 1,
       name: 'Curso Bajo',
       description: 'Curso completo de bajo para principiantes y avanzados.',
       price: 150,
@@ -9,7 +10,7 @@ export const products = [
       image: 'https://res.cloudinary.com/dz5bk4fbm/image/upload/v1716329767/bajo_a3vi3w.png',  // Imagen de un bajo
     },
     {
-      id: 2,
+      // id: 2,
       name: 'Curso Batería',
       description: 'Aprende a tocar la batería desde cero con este curso.',
       price: 200,
@@ -18,7 +19,7 @@ export const products = [
       image: 'https://res.cloudinary.com/dz5bk4fbm/image/upload/v1716329767/bateria_wneax9.png',  // Imagen de una batería
     },
     {
-      id: 3,
+      // id: 3,
       name: 'Curso Piano',
       description: 'Curso de piano para todos los niveles, con lecciones prácticas.',
       price: 180,
@@ -27,7 +28,7 @@ export const products = [
       image: 'https://res.cloudinary.com/dz5bk4fbm/image/upload/v1716329767/piano_jm4csi.png',  // Imagen de un piano
     },
     {
-      id: 4,
+      // id: 4,
       name: 'Curso Voz',
       description: 'Mejora tu técnica vocal con este curso especializado.',
       price: 130,
